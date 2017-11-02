@@ -27,9 +27,11 @@ There are two ways to create them. One is by Functional Components, the other is
   //ES6
   Welcome = () => {return <h1>Hello!</h1>};
   ```
+Functional Components has an argument called **props**, which will pass the data from **parent to child**.
+  
   - *Class Components*: Use a class to extends React.Component. It is used for internal recored keeping, which means it will be aware of 
   what happened to itself when rendering. **Every class based component we created must has a `render()` method.** Also, it should has a 
-  **`constructor()` function and a `state` object**. 
+  **`constructor()` function and a `state` object**.   
     - constructor(props): is the first and only function called automatically, whenever a new instance was created. Inside of it, should has
     a function called `super(props)`, and initialize the state by creating a new object, and assign it to this.state.
     ```js
@@ -40,6 +42,8 @@ There are two ways to create them. One is by Functional Components, the other is
     ```
     - State : is a js object that used to record and react with user events. **When the compenent state changes, the component and all of
     it's childern will get re-render immediately.** `this.setState()` is used to change the status of the `state`.
+   
+  In Class Components, `props` are avaliable anywhere, in any method we defined as `this.props`. When we refactory a component from functional to class based, we should replace all the `props` with `this.props`.
     
 #### 3. Render the component on the DOM
 
