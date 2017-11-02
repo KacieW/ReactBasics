@@ -9,14 +9,15 @@ There should be a `package.json` file, which will have all the config and depend
 Then create a src folder for all the components we will build and a index.js file. **It is pretty a good habit to keep one component per 
 file**. So in the `index.js` file, we'd better to create one componenet to be the parent of all other components.
 
-- Import libraries or components to the index.js file.
+#### 1. Import libraries or components to the index.js file.
   - `import React from 'react'`: it means we import the 'react' libaray to this file and given a name called *React*. 'react' is the core
   library that can **create and manage Componenets**, but it doesn't know how to put components in the DOM.
   - `import ReactDOM from 'react-dom'`: This is the libaray to **deal with the DOM**
   - `import YTSearch from 'youtube-api-search'`: This is how we import the dependency we added to the project
   - `import SearchItem from './foldername/searchItem'` : how to import other componenets we created to this file.
   
-- Create components. There are two ways to create them. One is by Functional Components, the other is by Class Components. 
+#### 2. Create components.
+There are two ways to create them. One is by Functional Components, the other is by Class Components. 
   - *Functional Components* is pretty simple. It just create a component by function. **Component name should be capital**. 'Welcome' is only
   a class for now, not an instance of the component. We need to create a instance for it to render it to the DOM. 
   ```js
@@ -40,7 +41,7 @@ file**. So in the `index.js` file, we'd better to create one componenet to be th
     - State : is a js object that used to record and react with user events. **When the compenent state changes, the component and all of
     it's childern will get re-render immediately.** `this.setState()` is used to change the status of the `state`.
     
-- Render the component on the DOM
+#### 3. Render the component on the DOM
 
   `ReactDOM.render()` is used to take the componenet's generated HTML and put is in the DOM. It takes two parameters. One is the instance
   of the component `<Welcome / >`, the second is the reference of the existing DOM node, which means where to put it on the DOM.
