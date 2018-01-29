@@ -1,0 +1,78 @@
+body{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  height: 100%;
+  width: 100%;
+}
+.container{
+  background: linear-gradient(#C5BAAF, #424B54);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.nav{
+  font-size: 2em;
+  
+}
+.headerSection{
+  font-size: 2em;
+  margin: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+  display: flex;
+}
+.mainSection{
+    margin:220px auto;
+}
+.header{
+  font-size: 1.4em;
+  text-align: center;
+}
+.inputBox{
+  display: block;
+  width:300px;
+  height: 40px;
+  margin: auto;
+  font-size: 1.6em;
+}
+.headerTitle{
+  flex-grow: 2;
+}
+.headerSection-inputBox{
+  width:200px;
+  height: 40px;
+  font-size: 1.6em;
+  margin-right: 10px;
+}
+.submitButton{
+  font-size: 14px;
+  background: #E3655B;
+  border-radius: 2px;
+  border: none;
+  height:50px;
+  margin: 20px auto;
+  display: block;
+  box-shadow:1px 1px 2px 2px rgba(59, 60, 60, 0.5);
+}
+.headerSection-submitButton{
+  font-size: 14px;
+  background: #E3655B;
+  border-radius: 2px;
+  border: none;
+  box-shadow:1px 1px 2px 2px rgba(59, 60, 60, 0.5);
+}
+.forecast-header{
+  text-align: center;
+  font-size:3em;
+}
+.forecast-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:30%;
+}
+.dayContainer{
+  justify-content: center;
+  text-align: center;
+}
