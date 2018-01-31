@@ -1,0 +1,35 @@
+.subContainer{
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  grid-template-rows: 20px auto;
+  margin-top: 40px;
+}
+.video-list{
+
+}
+.sideBar{
+}
+.input-bar{
+  width:100%;
+  margin-bottom: 20px;
+}
+.video-list-item{
+  display: grid;
+  grid-template-columns:1fr 2fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.video-video{
+  width: 100%;
+  height:300px;
+}
+.video-title{
+  font-size: 16px;
+  margin-top:10px;
+}
+.video-descript{
+  font-size: 12px;
+  margin-top: 10px;
+}
